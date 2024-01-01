@@ -157,12 +157,11 @@ end
 %(c)
 %load K=3 data
 load("ewavgr_unstack_3months.mat","ewavgr_unstack");
-load("MOM_factor_3months.mat", "MOM_factor_k");
+load("MOM_factor_3months.mat", "MOM_factor_3");
 
 %pca analysis
-ewavgr_unstack = table2array(ewavgr_unstack(:, 2:end));
-[coeff, ~, ~, ~, explained, mu] = pca(ewavgr_unstack);
-factors = ewavgr_unstack*coeff;
+[coeff, ~, ~, ~, explained, mu] = pca(ewavgr_unstack_3);
+factors = coeff*ewavgr_unstack_3;
 PC1_3 = factors(:, 1:3);
 %%
 
