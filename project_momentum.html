@@ -99,7 +99,25 @@ Momentum and reversal refer to the phenomena that previous stock returns can pre
 <h2>PCA for equal-weighted return</h2>
 <p><strong>(c)</strong> Use the principal component analysis for the equal-weighted return of five portfolios created by sorting on previous <em>K</em> = 3 months' return. How do you interpret the first and second factor from the PCA in economic terms? You may explore whether these factors are useful to explain portfolios sorted by previous stock returns. Also compare PCA factors to the factor MOM defined as the difference in equal-weighted return between the high previous stock returns portfolio and low previous stock returns portfolio.</p>
 <blockquote>
-    This is an indented block of text. It provides a visual cue to the reader that this text is a quotation or part of a separate block.
+    Using Principal Component Analysis and Momentum factor. We set factors as the momentum factors multiplied by the coefficient matrix and get the following results for the PCA factors. We see that the first factor just controls the level and is not useful to explain why high previous stock returns earn low returns in the cross-section. However, the second factor is strongly related to MOM, suggesting that there is slope structure for returns sorted by previous stock returns.
+
+<pre>
+
+ans = -0.3312
+
+
+ans = -0.9212
+
+
+ans = 0.0664
+
+
+ans = 0.1862
+
+
+ans =  -0.0506
+
+</pre>
 </blockquote>
 
 
