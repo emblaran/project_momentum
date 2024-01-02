@@ -29,7 +29,7 @@ Momentum and reversal refer to the phenomena that previous stock returns can pre
 <h2>Reading our data</h2>
 <p><strong>(a)</strong> First, read the datasets <code>return_monthly.xlsx</code> and <code>me_lag.xlsx</code> into MATLAB and reshape them into the long-table formats as you have seen in class. Then merge these two datasets and drop observations with missing lagged market capitalization. The output of your code should be similar to <code>return_m.mat</code>. You may or may not build on the code provided in <code>momentum_class.m</code>.</p>
 <blockquote>
-    We start by using readtable in MATLAB to read files <code>return_monthly.xlsx</code> and <code>me_lag.xlsx</code>
+    We start by using readtable in MATLAB to read files <code>return_monthly.xlsx</code> and <code>me_lag.xlsx</code>. We store the data for monthly returns in return_m_k and the table for the previous month market capitalizaiton as market_cap_lm_hor. Next we use stack function to convert the tables to long-format to be able to merge them as one dataset. By merging these tables using outerjoin we have our desired dataset that we store as return_m.mat.
 </blockquote>
 
 
